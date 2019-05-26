@@ -1,0 +1,16 @@
+name: tanoshimu-gem
+
+type:
+  - ruby
+
+up:
+  - homebrew:
+    - openssl
+  - ruby: 2.6.1
+  - bundler
+
+commands:
+  console:
+    run: pry
+  test:
+    run: bin/bundle exec rails test
