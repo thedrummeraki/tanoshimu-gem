@@ -7,4 +7,5 @@ module Tanoshimu
   ::ActiveResource::Base.connection.bearer_token = ENV.fetch('TANOSHIMU_TOKEN') { 'demo' }
 end
 
+require_relative 'tanoshimu/version'
 require_relative 'tanoshimu/show'
